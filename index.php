@@ -80,7 +80,7 @@
 					<ul>
 						<!--			repeat countries-->
 						<li ng-repeat="c in countryCtrl.countries">
-							<a href ng-href="#/states/{{ c.code }}">
+							<a href ng-href="./#!/states/{{ c.code }}">
 								<img ng-src="img/{{ c.code }}.png">
 								{{ c.name }}
 							</a>
@@ -97,16 +97,16 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="nav">
-             <a href="#home" class="button">Home</a>
+             <a href="./#!/" class="button">Home</a>
            
-            <a href="#about" class="button">About</a>
+            <a href="./#!/cookies" class="button">About</a>
              
           </div>
         </div>
       </div>
     </div>
 				
-				<div ng-view=''></div>
+				<ng-view></ng-view>
 			</div><!-- end .container -->
 		</div><!-- end .section -->
 	</div><!--END MAIN SECTION  -->
