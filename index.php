@@ -95,18 +95,20 @@
 				
 				<div class="container">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col">
           <div class="nav">
              <a href="./#!/" class="button">Home</a>
            
             <a href="./#!/cookies" class="button">About</a>
              
           </div>
+          
+          <ng-view></ng-view>
         </div>
       </div>
     </div>
 				
-				<ng-view></ng-view>
+				
 			</div><!-- end .container -->
 		</div><!-- end .section -->
 	</div><!--END MAIN SECTION  -->
